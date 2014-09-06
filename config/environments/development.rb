@@ -26,4 +26,8 @@ DisruptHack::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  ENV['TWILIO_ACCOUNT_SID'] = 'AC10fc09ca8885bdba98a1d3e2136da9e9'
+  ENV['TWILIO_TOKEN'] = 'c42b8ba6474f1f9ffe03530ce8e4323f'
+  
 end
