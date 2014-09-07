@@ -19,10 +19,25 @@ class TwilioController < ApplicationController
 	    sms_receiver.to = receiver
 	    messages_array[0] = sms_receiver
 	    #splits the received message
-	    instructions = params[:Body].upcase.split["/"]
+	    instructions = params[:Body].upcase.split('/')
 	  	case instructions[0]
-	  	#TODO: Instructions 1 - email, 2- text, 3- request
+	  	#TODO: Pin
 	  	when "REQUEST"
+	  		#request number
+	  		#instruction: request/mom/email
+	  		user = User.where("lower(email) = ?", instructions[2].downcase).first
+	  		contact = user.contacts.where("lower(name) = ?", instructions[1].downcase).first
+	  		sms_receiver.body = "Hello #{user.name} the number of #{instructions[1]} is #{contact.phone}; Remember to delete the messages security"
+	  	else
+			#send SMS
+			#instruction: mom/body/email
+			user = User.where("lower(email) = ?", instructions[2].downcase).first
+			contact = user.contacts.where("lower(name) = ?", instructions[0].downcase).first
+			sms_sender = TextMessage.new
+            sms_sender.body = instructions[1].downcase
+            sms_sender.from = "+18316847481"
+            sms_sender.to = transaction.sender_msisdn
+            messages_array[1] = sms_sender
 	  	end
 	  	response = ""
 	    account_sid = ENV['TWILIO_ACCOUNT_SID']
