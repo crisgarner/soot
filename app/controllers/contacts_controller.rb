@@ -22,7 +22,7 @@ class ContactsController < ApplicationController
 	def save_new
 		if session[:user_id]
 			user = User.find(session[:user_id])
-		  	user.contacts.create(name: params['name'],phone: params['number'],email: params['email'])
+		  	user.contacts.create(name: params['name'],phone: params['phone'],email: params['email'])
 		end
 		redirect_to '/contacts/show_all'
 	end
