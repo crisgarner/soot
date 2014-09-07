@@ -1,0 +1,988 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* line 8, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+body {
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* line 13, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.text-muted {
+  color: #777;
+}
+
+/* line 17, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.text-primary {
+  color: #fed136;
+}
+
+/* line 21, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* line 26, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+p.large {
+  font-size: 16px;
+}
+
+/* line 34, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+}
+
+/* line 38, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+a {
+  color: #fed136;
+}
+
+/* line 45, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+
+/* line 54, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+/* line 60, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.img-centered {
+  margin: 0 auto;
+}
+
+/* line 64, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+/* line 68, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.bg-darkest-gray {
+  background-color: #222;
+}
+
+/* line 72, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-primary {
+  border-color: #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 85, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+}
+
+/* line 93, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+/* line 111, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 116, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-primary .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+/* line 121, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-xl {
+  padding: 20px 40px;
+  border-color: #fed136;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 137, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  border-color: #f6bf01;
+  color: #fff;
+  background-color: #fec503;
+}
+
+/* line 145, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+
+/* line 163, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 168, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn-xl .badge {
+  color: #fed136;
+  background-color: #fff;
+}
+
+/* line 173, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default {
+  border-color: transparent;
+  background-color: #222;
+}
+
+/* line 178, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-brand {
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: #fed136;
+}
+
+/* line 186, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+  color: #fec503;
+}
+
+/* line 190, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+
+/* line 194, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-toggle {
+  border-color: #fed136;
+  background-color: #fed136;
+}
+
+/* line 199, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* line 204, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fed136;
+}
+
+/* line 208, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .nav li a {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+/* line 217, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+  outline: 0;
+  color: #fed136;
+}
+
+/* line 222, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-nav > .active > a {
+  border-radius: 0;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 229, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #fec503;
+}
+
+@media (min-width: 768px) {
+  /* line 235, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  /* line 244, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .navbar-default .navbar-brand {
+    font-size: 3em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  /* line 251, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .navbar-default .navbar-nav > .active > a {
+    border-radius: 3px;
+  }
+
+  /* line 255, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: #222;
+  }
+
+  /* line 260, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+/* line 265, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url(/assets/header-bg-f34f21ccd29f0d125ca761cf04f51fdc.jpg);
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 278, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+header .intro-text {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* line 283, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+header .intro-text .intro-lead-in {
+  margin-bottom: 25px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+/* line 291, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+header .intro-text .intro-heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+@media (min-width: 768px) {
+  /* line 301, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  header .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+  }
+
+  /* line 306, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+  }
+
+  /* line 314, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+  }
+}
+/* line 324, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section {
+  padding: 100px 0;
+}
+
+/* line 328, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+/* line 334, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  /* line 344, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  section {
+    padding: 150px 0;
+  }
+}
+/* line 349, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+/* line 354, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px;
+}
+
+/* line 359, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* line 366, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(254, 209, 54, 0.9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+/* line 377, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+/* line 381, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -12px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* line 392, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+/* line 397, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+/* line 401, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-caption {
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* line 409, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-caption h4 {
+  margin: 0;
+  text-transform: none;
+}
+
+/* line 414, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio .portfolio-item .portfolio-caption p {
+  margin: 0;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 421, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width: 767px) {
+  /* line 426, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+/* line 431, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 437, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  background-color: #f1f1f1;
+}
+
+/* line 448, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li {
+  position: relative;
+  margin-bottom: 50px;
+  min-height: 50px;
+}
+
+/* line 455, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+/* line 460, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li:after {
+  clear: both;
+}
+
+/* line 464, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li .timeline-panel {
+  float: right;
+  position: relative;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+/* line 472, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+/* line 479, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+/* line 486, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li .timeline-image {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  border: 7px solid #f1f1f1;
+  border-radius: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #fed136;
+}
+
+/* line 500, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li .timeline-image h4 {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* line 506, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+/* line 512, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+/* line 519, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+/* line 526, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 530, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+/* line 535, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+
+/* line 540, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  /* line 545, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline:before {
+    left: 50%;
+  }
+
+  /* line 549, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+
+  /* line 554, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+
+  /* line 561, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  /* line 568, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-image h4 {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  /* line 574, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 582, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li {
+    min-height: 150px;
+  }
+
+  /* line 586, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  /* line 590, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+
+  /* line 596, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-image h4 {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  /* line 602, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 608, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li {
+    min-height: 170px;
+  }
+
+  /* line 612, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+
+  /* line 616, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+
+  /* line 622, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+
+  /* line 626, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* line 631, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* line 636, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.team-member img {
+  margin: 0 auto;
+  border: 7px solid #fff;
+}
+
+/* line 641, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.team-member h4 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
+}
+
+/* line 647, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.team-member p {
+  margin-top: 0;
+}
+
+/* line 651, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+aside.clients img {
+  margin: 50px auto;
+}
+
+/* line 655, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact {
+  background-color: #222;
+  background-image: url(/map-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* line 662, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .section-heading {
+  color: #fff;
+}
+
+/* line 666, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+/* line 671, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+/* line 675, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+/* line 679, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+/* line 683, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+/* line 688, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 695, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 702, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 709, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+/* line 716, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+/* line 720, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+/* line 725, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+footer span.copyright {
+  text-transform: uppercase;
+  text-transform: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/* line 732, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+footer ul.quicklinks {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-transform: none;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/* line 740, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+/* line 744, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* line 761, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #fed136;
+}
+
+/* line 768, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: 0;
+}
+
+/* line 772, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .modal-content {
+  padding: 100px 0;
+  min-height: 100%;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 783, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .modal-content h2 {
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+
+/* line 788, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+/* line 792, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .modal-content p.item-intro {
+  margin: 20px 0 30px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+
+/* line 799, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 804, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+/* line 808, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 818, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .close-modal:hover {
+  opacity: .3;
+}
+
+/* line 822, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #222;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 833, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+.portfolio-modal .close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  background-color: #222;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 843, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+::-moz-selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 848, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+::selection {
+  text-shadow: none;
+  background: #fed136;
+}
+
+/* line 853, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+img::selection {
+  background: 0 0;
+}
+
+/* line 857, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+img::-moz-selection {
+  background: 0 0;
+}
+
+/* line 861, /Users/crisgarner/Projects/disruptHack/app/assets/stylesheets/agency.css.scss.erb */
+body {
+  webkit-tap-highlight-color: #fed136;
+}
