@@ -1,10 +1,40 @@
-<%= form_tag("/contacts/save_new", method: "post") do %>
-	<table><tr>
-			<td>Name:<input type="text" value="" name="name"></td> 
-			<td>Email:<input type="text" value="" name="email"></td>
-			<td>Phone:<input type="text" value="" name="number"></td>
-			</li>
-		</tr>
-	</table>
-	<%= submit_tag("Save") %>
-<%end%>
+<section id="contact">
+        <div class="container" style="margin-top:-230px;">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">New</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                	<%= form_tag("/contacts/save_new", method: "post") do %>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                	<label style="color:white">Name:</label>
+                                    <input type="text" value="" name="name" class="form-control">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                	<label style="color:white">Email:</label>
+                                    <input type="text" value="" name="email" class="form-control">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                	<label style="color:white">Phone:</label>
+                                    <input type="text" value="" name="phone" class="form-control">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <%= submit_tag "Save", :class => 'btn btn-xl' %>
+
+                            </div>
+                        </div>
+                    <%end%>
+                </div>
+            </div>
+        </div>
+    </section>

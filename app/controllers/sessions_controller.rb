@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
     end
    
     session[:user_id] = user.id
-    redirect_to root_url
+    redirect_to "/contacts/show_all"
   end
 
   def destroy
