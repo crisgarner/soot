@@ -15,6 +15,8 @@ DisruptHack::Application.routes.draw do
   get "/contacts/:importer/callback" => "contacts#contacts_callback"
   post "/contacts/:importer/callback" => "contacts#contacts_callback"
   post "/contacts/save_contacts" => "contacts#save_contacts"
+  get "/contacts/show_all" => "contacts#show_all"
+  get "/contacts/remove/:contact_id" => "contacts#remove"
 
 
   # The priority is based upon order of creation: first created -> highest priority.

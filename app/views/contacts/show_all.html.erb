@@ -1,0 +1,9 @@
+<% @contacts.each do |contact| %>
+	<p><%= contact.name %></p>
+	<p><%= contact.phone %></p>
+	<p><%= contact.email %></p>
+	<p>
+		<a href="/contacts/edit/<%= contact.id %>">Edit</a>
+		<a href="/contacts/remove/<%= contact.id %>">Delete</a>
+	</p>
+<% end %>
