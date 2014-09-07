@@ -14,15 +14,15 @@ class TwilioController < ApplicationController
 	 	receiver = params[:From]
 	 	messages_array = []
 	    sms_receiver = TextMessage.new  #Class TextMessage is on lib folder 
-	    sms_receiver.body = "test"  
+	    sms_receiver.body = ""  
 	    sms_receiver.from = "+18316847481"  #twilio number
 	    sms_receiver.to = receiver
 	    messages_array[0] = sms_receiver
 	    #splits the received message
-	    instructions = params[:Body].upcase.split
+	    instructions = params[:Body].upcase.split["/"]
 	  	case instructions[0]
 	  	#TODO: Instructions 1 - email, 2- text, 3- request
-	  	when ""
+	  	when "REQUEST"
 	  	end
 	  	response = ""
 	    account_sid = ENV['TWILIO_ACCOUNT_SID']

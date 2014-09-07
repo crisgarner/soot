@@ -16,6 +16,7 @@ class ContactsController < ApplicationController
 			  	end
 			end
 		end
+		redirect_to '/contacts/show_all'
 	end
 
 	def save_new
