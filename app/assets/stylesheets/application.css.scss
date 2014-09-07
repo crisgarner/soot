@@ -10,7 +10,6 @@
  *
  *= require_self
  *= require_tree .
- *= stub bootstrap.css
- *= stub agency.css
+ *= require bootstrap.min
  */
-  @import "bootstrap";
+
