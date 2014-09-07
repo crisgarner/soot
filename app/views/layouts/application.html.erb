@@ -43,6 +43,8 @@
                     </li>
                      <% if current_user %>
                        <li class="clearfix"><a href="#"> <span class="user-name network-name"><%= current_user.name %></span></a>
+                        </li> 
+                        <li class="clearfix"> <span class="user-name network-name">PIN <%= current_user.pin %></span>
                         </li>  
                         <li class="clearfix"><a href="../../signout"> <span class="user-name network-name">Sign out</span></a>
                         </li>  
