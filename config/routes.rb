@@ -1,5 +1,7 @@
 DisruptHack::Application.routes.draw do
 
+  resources :testing_s
+
   root :to => 'static#index' 
   #twilio
   post 'twilio/request_sms' => 'twilio#request_sms'
@@ -17,7 +19,10 @@ DisruptHack::Application.routes.draw do
   post "/contacts/save_contacts" => "contacts#save_contacts"
   get "/contacts/show_all" => "contacts#show_all"
   get "/contacts/remove/:contact_id" => "contacts#remove"
-
+  get "/contacts/edit/:contact_id" => "contacts#edit"
+  get "/contacts/new" => "contacts#new"
+  post "/contacts/save_new" => "contacts#save_new"
+  post "/contacts/update_contact/:contact_id" => "contacts#update_contact"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

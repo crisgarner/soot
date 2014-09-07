@@ -18,6 +18,27 @@ class ContactsController < ApplicationController
 		end
 	end
 
+	def save_new
+		if session[:user_id]
+			user = User.find(session[:user_id])
+		  	user.contacts.create(name: params['name'],phone: params['number'],email: params['email'])
+		end
+		redirect_to '/contacts/show_all'
+	end
+
+	
+
+	def update_contact
+		if session[:user_id]
+			@contact = Contact.find(params['contact_id'])
+			@contact.name = params['name']
+			@contact.phone = params['number']
+			@contact.email = params['email']
+			@contact.save
+		end
+		redirect_to '/contacts/show_all'
+	end
+
 	def show_all
 		if session[:user_id]
 			@user = User.find(session[:user_id])
@@ -28,9 +49,19 @@ class ContactsController < ApplicationController
 	def remove
 		if session[:user_id]
 			@contact = Contact.find(params['contact_id'])
-		@contact.destroy
+			@contact.destroy
 		end
 		redirect_to '/contacts/show_all'
 		
+	end
+
+	def edit
+		if session[:user_id]
+			@contact = Contact.find(params['contact_id'])
+		end
+	end
+
+	def new
+
 	end
 end

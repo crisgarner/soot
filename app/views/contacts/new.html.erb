@@ -1,0 +1,10 @@
+<%= form_tag("/contacts/save_new", method: "post") do %>
+	<table><tr>
+			<td>Name:<input type="text" value="" name="name"></td> 
+			<td>Email:<input type="text" value="" name="email"></td>
+			<td>Phone:<input type="text" value="" name="number"></td>
+			</li>
+		</tr>
+	</table>
+	<%= submit_tag("Save") %>
+<%end%>
