@@ -7,7 +7,8 @@
  * License: www.fancyapps.com/fancybox/#license
  *
  * Copyright 2012 Janis Skarnelis - janis@fancyapps.com
- *
+ ***
+ ***
  */
 
 (function (window, document, $, undefined) {
