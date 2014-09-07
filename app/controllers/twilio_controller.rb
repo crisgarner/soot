@@ -24,21 +24,34 @@ class TwilioController < ApplicationController
 	  	#TODO: Pin
 	  	when "REQUEST"
 	  		#request number
-	  		#instruction: request/mom/email
-	  		user = User.where("lower(email) = ?", instructions[2].downcase).first
-	  		contact = user.contacts.where("lower(name) = ?", instructions[1].downcase).first
-	  		sms_receiver.body = "Hello #{user.name} the number of #{instructions[1]} is #{contact.phone}; Remember to delete the messages for security"
+	  		#instruction: request/mom/email/pin
+	  		user = User.where("lower(email) = ? AND pin = ?", instructions[2].downcase,instructions[3]).first
+	  		if user
+	  			contact = user.contacts.where("lower(name) = ?", instructions[1].downcase).first
+	  			sms_receiver.body = "Hello #{user.name} the number of #{instructions[1]} is #{contact.phone}; Remember to delete the messages for security"
+	  		else
+	  			sms_receiver.body = "Sorry the email or pin are wrong!"
+	  		end		
 	  	else
 			#send SMS
-			#instruction: mom/body/email
-			user = User.where("lower(email) = ?", instructions[2].downcase).first
-			contact = user.contacts.where("lower(name) = ?", instructions[0].downcase).first
-			sms_receiver.body = "the message was sent to the phone number of #{instructions[0]} which is #{contact.phone}; Remember to delete the messages for security"
-			sms_sender = TextMessage.new
-            sms_sender.body = instructions[1].downcase
-            sms_sender.from = "+18316847481"
-            sms_sender.to = contact.phone
-            messages_array[1] = sms_sender
+			#instruction: mom/body/email/pin
+			if instructions.size == 4
+				user = User.where("lower(email) = ? AND pin = ?", instructions[2].downcase,instructions[3]).first
+				if user
+		  			contact = user.contacts.where("lower(name) = ? ", instructions[0].downcase).first
+					sms_receiver.body = "the message was sent to the phone number of #{instructions[0]} which is #{contact.phone}; Remember to delete the messages for security"
+					sms_sender = TextMessage.new
+		            sms_sender.body = instructions[1].downcase
+		            sms_sender.from = "+18316847481"
+		            sms_sender.to = contact.phone
+		            messages_array[1] = sms_sender	
+		  		else
+		  			sms_receiver.body = "Sorry the email or pin are wrong!"
+		  		end	
+		  	else
+		  		sms_receiver.body = "Wrong instruction!"
+		  	end
+			
 	  	end
 	  	response = ""
 	    account_sid = ENV['TWILIO_ACCOUNT_SID']

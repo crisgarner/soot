@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :contacts, :dependent => :destroy
-
+  before_create :generate_access_pin
   def self.from_omniauth(auth)
     user = nil
   	if auth["provider"] == "facebook"
@@ -19,6 +19,14 @@ class User < ActiveRecord::Base
 	    user.email = auth.info.email
 	    user.save!
       user
+  end
+
+  private 
+  def generate_access_pin
+      begin
+      id = rand(9999).to_s.center(4, rand(9).to_s)
+        self.pin = id
+      end while self.class.exists?(pin: pin)
   end
 
   #todo: identity and google omni auth
