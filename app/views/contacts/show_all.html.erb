@@ -1,10 +1,45 @@
-<a href="/contacts/new">New</a>
-<% @contacts.each do |contact| %>
-	<p><%= contact.name %></p>
-	<p><%= contact.phone %></p>
-	<p><%= contact.email %></p>
-	<p>
-		<a href="/contacts/edit/<%= contact.id %>">Edit</a>
-		<a href="/contacts/remove/<%= contact.id %>">Delete</a>
-	</p>
-<% end %>
+    <!-- Services Section -->
+
+    <section id="services" style="margin-top:-260px;">
+
+        <div class="container">
+                      <div class="row">
+                      	<div style="text-align:center;margin-top:-160px;">
+                      		<h2 style="color:white;display:block;margin-top:-10px;">Add</h2>
+	                      	<%= link_to "/contacts/gmail", id: "google_contacts",class:"btn btn-default btn-lg" do %>
+	                        <i class="fa fa-google fa-fw"></i> <span class="network-name">Google</span></a>
+	                      	<% end %>
+	                      	<%= link_to "#", id: "add_id",class:"btn btn-default btn-lg" do %>
+	                        <i class="fa fa-plus fa-fw"></i> <span class="network-name">New</span></a>
+	                      	<% end %>
+                      	</div>
+                      	
+                      	<br><br><br><br>
+                          <div class="col-lg-12 text-center">
+                              <h2 class="section-heading" style="color:white">Contacts</h2>
+                              <h3 class="section-subheading text-muted"></h3>
+                          </div>
+                      </div>
+                      <div class="row text-center">
+                      <% @contacts.each do |contact|%>
+                          
+                         
+                              <div class="col-md-4">
+                                  <span class="fa-stack fa-4x">
+                                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                      <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                  </span>
+                                  <h4 class="service-heading"><%= contact[:name]%></h4>
+                                  <p class="text-muted">Email: <%= contact[:email]%><br>
+                                    Phone: <%= contact[:phone]%>
+                                  </p>
+                                  <a href="/contacts/edit/<%= contact.id %>" style="font-weight:bold;">Edit</a>
+                                  <a href="/contacts/remove/<%= contact.id %>" style="font-weight:bold;">Remove</a>
+                              </div>
+                         
+                        <%end%>
+                        </div>
+                                </div>
+    </section>
+
+

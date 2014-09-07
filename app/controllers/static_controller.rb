@@ -2,6 +2,7 @@ class StaticController < ApplicationController
 	def index
 		if session[:user_id]
 			@user = User.find(session[:user_id])
+			@contacts = @user.contacts.all()
 		end
 	end
 

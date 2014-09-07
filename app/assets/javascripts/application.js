@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.fancybox
+//= require main
 //= require turbolinks
 //= require_tree .
 //= require_self

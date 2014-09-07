@@ -33,7 +33,7 @@ class ContactsController < ApplicationController
 		if session[:user_id]
 			@contact = Contact.find(params['contact_id'])
 			@contact.name = params['name']
-			@contact.phone = params['number']
+			@contact.phone = params['phone']
 			@contact.email = params['email']
 			@contact.save
 		end
