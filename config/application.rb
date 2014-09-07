@@ -8,6 +8,13 @@ Bundler.require(:default, Rails.env)
 
 module DisruptHack
   class Application < Rails::Application
+    config.generators.stylesheets = false
+    config.generators.javascripts = false
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.precompile += ["agency.css"]
+    config.assets.precompile += ["jquery.fancybox.css"]
+    config.assets.enabled = true
+    config.assets.digest = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -19,6 +26,6 @@ module DisruptHack
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    
+
   end
 end
