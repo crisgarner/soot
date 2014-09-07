@@ -30,6 +30,11 @@ gem 'jbuilder', '~> 1.2'
 #Twilio
 gem 'twilio-ruby'
 
+#Omniauth
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem "omnicontacts", "~> 0.3.5", :git => "git://github.com/Diego81/omnicontacts.git"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

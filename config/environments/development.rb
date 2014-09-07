@@ -29,5 +29,8 @@ DisruptHack::Application.configure do
 
   ENV['TWILIO_ACCOUNT_SID'] = 'AC10fc09ca8885bdba98a1d3e2136da9e9'
   ENV['TWILIO_TOKEN'] = 'c42b8ba6474f1f9ffe03530ce8e4323f'
-  
+  ENV['FACEBOOK_ID'] = '539552046178571'
+  ENV['FACEBOOK_SECRET'] = '94061a1429be9156669b2cd30e00c39a'
+  ENV['GOOGLE_ID'] = '1004199404672-f6f0a2do5ke1cke4en6n1skj0u3n2rp1.apps.googleusercontent.com'
+  ENV['GOOGLE_SECRET'] = 'mmvRmWsc8qSCjh17Xtv6jSN2'
 end

@@ -1,4 +1,22 @@
 DisruptHack::Application.routes.draw do
+
+  root :to => 'static#index' 
+  #twilio
+  post 'twilio/request_sms' => 'twilio#request_sms'
+  get  'twilio/request_sms' => 'twilio#request_sms'
+  #statics
+  get "home" => "static#home"
+  #sessions
+  get 'auth/:provider/callback' => 'sessions#create'
+  post 'auth/:provider/callback' => 'sessions#create'
+  get 'auth/failure' => redirect('/')
+  get 'signout'=> 'sessions#destroy', as: 'signout'
+  #contacts
+  get "/contacts/:importer/callback" => "contacts#contacts_callback"
+  post "/contacts/:importer/callback" => "contacts#contacts_callback"
+  post "/contacts/save_contacts" => "contacts#save_contacts"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

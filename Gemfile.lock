@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/Diego81/omnicontacts.git
+  revision: 24da3627aab1ae31eeaeb5d3b735d55d30e3a33b
+  specs:
+    omnicontacts (0.3.5)
+      json
+      rack
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,6 +44,9 @@ GEM
     coffee-script-source (1.8.0)
     erubis (2.7.0)
     execjs (2.2.1)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    hashie (3.3.1)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (1.5.3)
@@ -52,6 +63,24 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    oauth2 (1.0.0)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
+    omniauth-facebook (2.0.0)
+      omniauth-oauth2 (~> 1.2)
+    omniauth-oauth2 (1.2.0)
+      faraday (>= 0.8, < 0.10)
+      multi_json (~> 1.3)
+      oauth2 (~> 1.0)
+      omniauth (~> 1.2)
     pg (0.17.1)
     polyglot (0.3.5)
     rack (1.5.2)
@@ -99,9 +128,9 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.3.0)
       coffee-rails
-    twilio-ruby (3.11.6)
+    twilio-ruby (3.12.2)
       builder (>= 2.1.2)
-      jwt (>= 0.1.2)
+      jwt (~> 1.0.0)
       multi_json (>= 1.3.0)
     tzinfo (0.3.41)
     uglifier (2.5.3)
@@ -115,6 +144,9 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
+  omniauth
+  omniauth-facebook
+  omnicontacts (~> 0.3.5)!
   pg
   rails (= 4.0.1)
   sass-rails (~> 4.0.0)

@@ -1,7 +1,7 @@
 require 'twilio-ruby'
 require 'text_message'
 
-class TwilioControllerController < ApplicationController
+class TwilioController < ApplicationController
 
 	 include Webhookable
 
@@ -9,11 +9,12 @@ class TwilioControllerController < ApplicationController
 	 skip_before_action :verify_authenticity_token
 
 	 #process the instructions sent to the twilio number
-	 def request
+	 def request_sms
 	 	sender = params[:From]
+	 	receiver = params[:From]
 	 	messages_array = []
 	    sms_receiver = TextMessage.new  #Class TextMessage is on lib folder 
-	    sms_receiver.body = ""  
+	    sms_receiver.body = "test"  
 	    sms_receiver.from = "+18316847481"  #twilio number
 	    sms_receiver.to = receiver
 	    messages_array[0] = sms_receiver

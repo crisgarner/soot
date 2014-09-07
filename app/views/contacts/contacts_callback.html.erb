@@ -1,0 +1,33 @@
+<h3>Select and edit which contacts you want to save</h3>
+<table>
+<%= form_tag("/contacts/save_contacts", method: "post") do %>
+
+<% if !@contacts.nil?%>
+	<tr>
+		<td></td>
+		<td>Name</td>
+		<td>Email</td>
+		<td>Phone Number</td>
+	</tr>
+	<ul>
+	<% 
+	i = 0
+	@contacts.each do |c|
+		i += 1
+		%>
+
+	<tr>
+		<td><li><input type="checkbox" name="form[<%= i%>][status]"> </td>
+		<td><input type="text" value="<%= c[:name]%>" name="form[<%= i%>][name]"></td> 
+		<td><input type="text" value="<%= c[:email]%>" name="form[<%= i%>][email]"></td>
+		<td><input type="text" value="<%= c[:phone_number]%>" name="form[<%= i%>][number]"></td>
+		</li>
+	</tr>
+		
+	
+	<%end%>
+	</ul>	
+	<tr><td></td><td></td><td></td><td><%= submit_tag("Save") %></td></tr>
+<%end%>
+<% end %>
+</table>
